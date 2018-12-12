@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171717">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ln1">
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/visual_banner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <EditText
+                android:layout_marginBottom="1dp"
+
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/white"
+                android:id="@+id/edtuser"
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="text"/>
+
+            <EditText
+                android:layout_marginBottom="1dp"
+
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:id="@+id/edtpass"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/login"
+                android:background="@color/login"
+                android:textColor="#211f11"
+                android:id="@+id/btnlogin"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/need_help"
+            android:textColor="#ffe500"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp" />
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_above="@+id/tv1"
+            android:layout_centerInParent="true"
+            android:textColor="#ffe500"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

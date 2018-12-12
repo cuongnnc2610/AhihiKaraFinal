@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg">
+
+
+    <LinearLayout
+        android:id="@+id/nameBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#303030"
+        android:weightSum="7.0">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:background="@drawable/ic_chevron_left_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:background="@drawable/ic_more_horiz_black_24dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imv_profilePhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/nameBar"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_nameUser"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imv_profilePhoto"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_aboutUser"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/tv_nameUser"
+        android:layout_centerInParent="true"
+        />
+
+
+    <Button
+        android:id="@+id/btn_editUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_aboutUser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/button"
+        android:text="Chỉnh sửa trang cá nhân"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_baihatdathich"
+        android:layout_below="@id/btn_editUser"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baihatyeuthich"
+        android:textColor="#ffe500"
+        android:textSize="20sp"
+        android:background="@null"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_baihatuseryeuthich"
+        android:layout_below="@+id/btn_baihatdathich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

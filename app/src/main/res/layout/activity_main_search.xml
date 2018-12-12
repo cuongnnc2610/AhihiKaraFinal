@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_bar"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_bar"
+            android:layout_weight="1"
+            android:background="@drawable/arrow"
+            android:onClick="searchSong"/>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:layout_marginLeft="@dimen/margin_bar"
+            android:hint="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_bar"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_bar"
+            android:layout_weight="2"
+            android:background="@drawable/search"
+            android:onClick="searchSong"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:listSelector="@drawable/list_selector">
+    </ListView>
+
+
+</RelativeLayout>

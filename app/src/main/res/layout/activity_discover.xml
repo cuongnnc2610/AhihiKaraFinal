@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#171717">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_search_black_24dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/timkiem"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#777777"
+                    android:textColorHint="#777777"
+                    android:textSize="20sp"
+                    android:layout_weight="10"/>
+
+                <ImageView
+                    android:id="@+id/btn_myahihi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_account_circle_black_24dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:contentDescription="@string/banner"
+                android:src="@drawable/banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_baihatmoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/baihatmoi"
+                    android:textColor="#ffe500"
+                    android:textSize="@dimen/header"
+                    android:onClick="nhacMoi"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_baihatmoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btnCallSongBookActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/baihatyeuthich"
+                    android:textColor="#ffe500"
+                    android:textSize="@dimen/header"
+                    android:onClick="tatCa"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_baihatyeuthich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btn_xemtatca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:paddingTop="5dp"
+                    android:text="@string/xemtatca"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff00"
+                    android:textSize="15sp"
+                    android:onClick="tatCa"/>
+
+
+                <Button
+                    android:id="@+id/btn_nhacviet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/nhacviet"
+                    android:textColor="#ffe500"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:onClick="nhacViet"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_nhacviet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btn_nhacaumy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/nhacaumy"
+                    android:textColor="#ffe500"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:onClick="nhacAuMi"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_nhacaumy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btn_nhactrutinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/nhachan"
+                    android:textColor="#ffe500"
+                    android:textSize="@dimen/header"
+                    android:textStyle="bold"
+                    android:onClick="nhacTruTinh"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_nhachan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

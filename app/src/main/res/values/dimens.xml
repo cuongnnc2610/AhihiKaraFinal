@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width">30dp</dimen>
+    <dimen name="height_songbook">50dp</dimen>
+    <dimen name="height_banner">200dp</dimen>
+    <dimen name="photo">70dp</dimen>
+
+    <dimen name="left">15dp</dimen>
+    <dimen name="right">15dp</dimen>
+    <dimen name="top">5dp</dimen>
+    <dimen name="bottom">5dp</dimen>
+
+    <dimen name="padding">5dp</dimen>
+    <dimen name="large_size">12sp</dimen>
+    <dimen name="small_size">8sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header">20sp</dimen>
+    <dimen name="image">64dp</dimen>
+
+    <dimen name="margin_item">5dp</dimen>
+
+    <dimen name="margin_bar">10dp</dimen>
+
+    <dimen name="banner">170dp</dimen>
+
+    <dimen name="size_bar">25dp</dimen>
+
+
+</resources>

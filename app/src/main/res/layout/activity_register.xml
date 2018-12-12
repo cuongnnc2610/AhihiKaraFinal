@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171717">
+
+            <LinearLayout
+                android:id="@+id/nameBar"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="7.0"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/backtosign"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng kí tài khoản"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/nameBar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên tài khoản"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/signedtuser"
+                android:layout_marginBottom="0.5dp"
+
+                android:textColor="#ffe500"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColorHint="#ffffff"
+
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="text"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu   "
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/signedtpass"
+                android:layout_marginBottom="0.5dp"
+                android:textColor="#ffe500"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPassword"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác nhận mật khẩu   "
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/edtrepass"
+                android:layout_marginBottom="0.5dp"
+                android:textColor="#ffe500"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff"
+                />
+            <RadioGroup
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rdbtngender"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+                <RadioButton
+                    android:id="@+id/rdmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/malegender"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"/>
+                <RadioButton
+                    android:id="@+id/rdfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/femalegender"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginHorizontal="10dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/register"
+                android:background="@color/login"
+                android:textColor="#211f11"
+                android:id="@+id/btnsignup"
+                android:layout_marginTop="12dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

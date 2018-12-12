@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/iconSong"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="8"
+            android:layout_weight="8">
+            <TextView
+                android:id="@+id/nameSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFFFFF"
+                android:text="Lạc Trôi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/singerSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#969FAA"
+                android:text="Sơn Tùng"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="❤"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textAllCaps="false" />
+            <TextView
+                android:id="@+id/likeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#969FAA" />
+</LinearLayout>

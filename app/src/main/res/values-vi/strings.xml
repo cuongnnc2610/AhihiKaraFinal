@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Khám phá</string>
+    <string name="my_favorites">Bài hát yêu thích</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Cài Đặt</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="login_title">ĐĂNG NHẬP</string>
+    <string name="login_lable1">Tài khoản</string>
+    <string name="login_lable2">Mật khẩu</string>
+    <string name="login_btn">Đăng nhập</string>
+    <string name="register_title">TẠO TÀI KHOẢN</string>
+    <string name="register_email">Email</string>
+    <string name="register_btn">Đăng kí</string>
+
+    <string name="need_help">Trợ giúp</string>
+    <string name="sign_up">ĐĂNG KÍ TÀI KHOẢN</string>
+    <string name="login">Đăng nhập</string>
+    <string name="user_name">Tên tài khoản</string>
+    <string name="password">Mệt khẩu</string>
+    <string name="timkiem">Tài kiếm</string>
+    <string name="name">Name</string>
+    <string name="baihatmoi">Bài hát mới</string>
+    <string name="baihatyeuthich">Bài hát yêu thích</string>
+    <string name="xemtatca">Xem tất cả ></string>
+    <string name="nhacviet">Nhạc Việt Nam</string>
+    <string name="nhacaumy">Nhạc Âu Mỹ</string>
+    <string name="nhachan">Nhạc trữ tình</string>
+    <string name="banner">Banner</string>
+    <string name="malegender">Nam</string>
+    <string name="femalegender">Nữ</string>
+    <string name="register">Đăng kí</string>
+</resources>

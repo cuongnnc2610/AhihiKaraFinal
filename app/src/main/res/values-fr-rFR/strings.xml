@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Découvrir</string>
+    <string name="my_favorites">Mes favoris</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="section_format">Hello World de la section: %1$d</string>
+
+    <string name="login_title">CONNEXION</string>
+    <string name="login_lable1">Compte</string>
+    <string name="login_lable2">Mot de passe</string>
+    <string name="login_btn">Connexion </string>
+    <string name="register_title">CREER UN COMPTE</string>
+    <string name="register_email">Email</string>
+    <string name="register_btn">Enregistrer</string>
+
+    <string name="need_help">Aide</string>
+    <string name="sign_up">CREER UN COMPTE</string>
+    <string name="login">Connexion</string>
+    <string name="user_name">Créer un compte</string>
+    <string name="password">Mot de passe</string>
+    <string name="timkiem">Recherche </string>
+    <string name = "name">Nom</string>
+    <string name = "baihatmoi">Nouvelles chansons</string>
+    <string name = "baihatyeuthich">Chansons préférées</string>
+    <string name = "xemtatca">Tout voir ></string>
+    <string name = "nhacviet">Chansons vietnamiennes</string>
+    <string name = "nhacaumy">Chansons américaines - britanniques</string>
+    <string name = "nhachan">Bolero</string>
+    <string name = "banner">Bannière</string>
+    <string name = "malegender">Homme</string>
+    <string name = "femalegender">Femme</string>
+    <string name = "register">Enregistrer</string>
+</resources>
